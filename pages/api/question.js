@@ -24,7 +24,7 @@ export default async function POST(req, res) {
                     content: `Facts:\n${facts.join("\n")}\n\nQuestion: ${question}`,
                 },
             ],
-            max_tokens: 300
+            max_tokens: 500
         });
 
         res.status(200).json({
